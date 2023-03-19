@@ -10,7 +10,6 @@ Karten:
  - Satellitenkarte
  - Voyager-Karte
  - Basemap (AT)
- - Wikimedia
 
 Overlays:
 
