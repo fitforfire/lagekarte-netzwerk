@@ -76,6 +76,10 @@ Bild als eigene Karte verwenden. Dieses bietet sich z.B. für Brandschutzpläne 
 
 ## TALIS | MAR
 
+TALIS (Taktische Löschintensität) oder MAR (Mindestapplikationsrate) berechnet, wie viel Liter Löschmittel rechnerisch für diese Fläche benötigt werden.
+
+![](../assets/img/funktionen-talis-popup.png);
+
 ## Tankpendelverkehr 
 
 Eine Funktion um die verfügbare Menge an Wasser zu berechnen.
