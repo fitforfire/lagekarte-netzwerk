@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github/index.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Lagekarte.info',
+      // repo: 'https://github.com/fitforfire/lagekarte-netzwerk',
+      themeColor: '#0074d9',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      // logo: 'https://www.lagekarte.info/src/img/lagekarte_lang.png',
+    // coverpage: true
+
+      search: 'auto', // default
+
+      // search: [
+      //   '/',            // => /README.md
+      //   '/guide',       // => /guide.md
+      //   '/get-started', // => /get-started.md
+      //   '/zh-cn/',      // => /zh-cn/README.md
+      // ],
+
+      // complete configuration parameters
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto', // [] or 'auto'
+        // placeholder: 'Suche',
+
+        // Localization
+        placeholder: {
+          '/en/': 'Search',
+          '/': 'Suche',
+        },
+
+        // noData: 'No Results!',
+
+        // Localization
+        noData: {
+          '/en/': 'No Results',
+          '/': 'Kein Ergebnis',
+        },
+
+        // Headline depth, 1 - 6
+        depth: 2,
+
+        hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+
+        // To avoid search index collision
+        // between multiple websites under the same domain
+        namespace: 'lagekarte-netzwerk',
+
+        // Use different indexes for path prefixes (namespaces).
+        // NOTE: Only works in 'auto' mode.
+        //
+        // When initialiazing an index, we look for the first path from the sidebar.
+        // If it matches the prefix from the list, we switch to the corresponding index.
+        pathNamespaces: ['/en'],
+
+        // You can provide a regexp to match prefixes. In this case,
+        // the matching substring will be used to identify the index
+        // pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
+      },
+
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/fitforfire/lagekarte-netzwerk/blob/master/docs/', null,
+          function(filePath) {
+            if (filePath.indexOf('en') === -1) {
+              return 'Edit'
+            } else {
+              return 'Bearbeiten'
+            }
+          } 
+        ),
+        function showSignInOnHover(hook, vm) {
+          hook.beforeEach(function (markdown) {
+            markdown = markdown.replaceAll('🔑 ','<span title="Nur mit Account möglich">🔑</span>')           
+            return markdown;
+          });
+        },
+        function childPagesPlugin(hook, vm) {
+          hook.beforeEach(function (markdown, next) {
+            try {
+              if(markdown.includes('$childPages$')){
+                markdown = markdown.replaceAll('$childPages$','<span style="display: none">$childPages$</span>');
+                loadNested(vm.route.path,"",vm.config.loadSidebar,(x)=>{
+                  const sidebarResult = vm.compiler.sidebar(x, vm.config.maxLevel);
+                  markdown = markdown.replaceAll('<span style="display: none">$childPages$</span>','<div class="childPages" style="display: none">'+sidebarResult+'</div>')
+                  next(markdown);
+                }, vm);
+              } else {
+                next(markdown);
+              }
+            } catch (err) {
+              next(markdown);
+            }
+          })
+
+          hook.doneEach(function(){
+            const childPages = document.querySelectorAll('.childPages');
+            childPages.forEach((childPageElement)=>{
+              const tocChildPages = childPageElement.querySelector('.childPages a[href$="'+vm.route.path+'"] ~ ul');
+              childPageElement.outerHTML = tocChildPages.innerHTML;
+            })
+          })
+
+          function loadNested(path, qs, file, next, vm, first) {
+            path = first ? path : path.replace(/\/$/, '');
+            path = Docsify.util.getParentPath(path);
+
+            if (!path) {
+              return;
+            }
+
+            Docsify.get(
+              vm.router.getFile(path + file) + qs,
+              false,
+              vm.config.requestHeaders
+            ).then(next, _ => loadNested(path, qs, file, next, vm));
+          }
+        },
+      ],
+
+      executeScript: true
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/docsify.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

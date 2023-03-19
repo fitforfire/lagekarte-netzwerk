@@ -1,0 +1,25 @@
+{
+  "name": "lagekarte-netzwerk",
+  "version": "1.0.0",
+  "description": "Dokumentation, Fehlermeldungen, Feature Anfragen",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitforfire/lagekarte-netzwerk.git"
+  },
+  "keywords": [
+    "lagekarte"
+  ],
+  "author": "Falke-Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fitforfire/lagekarte-netzwerk/issues"
+  },
+  "homepage": "https://github.com/fitforfire/lagekarte-netzwerk#readme"
+}
