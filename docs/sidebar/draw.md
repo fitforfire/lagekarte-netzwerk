@@ -17,7 +17,7 @@ In diesem Tab der Sidebar befinden sich alle Tools um auf der Karte Objekte einz
 | ![](../assets/img/edit-bucket-tool.png)  | Einfärben  | F            |
 | ![](../assets/img/edit-pipette-tool.png) | Pipette    | P            |
 | ![](../assets/img/edit-remove-tool.png)  | Löschen    | ENTF         |
-| ![](../assets/img/measure-tool.png)      | Messen     | H            |
+| ![](../assets/img/measure-tool.png)      | Messen [mehr](sidebar/funktionen.md#messen)     | H            |
 | ![](../assets/img/edit-rotate-tool.png)  | Drehen     | B            |
 
 #### Zeichnen
@@ -28,7 +28,7 @@ In diesem Tab der Sidebar befinden sich alle Tools um auf der Karte Objekte einz
 | ![](../assets/img/draw-circle-tool.png)          | Kreis          | K            |
 | ![](../assets/img/draw-circle-2x-tool.png)       | Kreis 2-Punkt  |              |
 | ![](../assets/img/draw-circle-3x-tool.png)       | Kreis 3-Punkt  |              |
-| ![](../assets/img/draw-gefahrgut-tool.png)       | Gefahrgutzonen | G            |
+| ![](../assets/img/draw-gefahrgut-tool.png)       | Gefahrgutzonen [mehr](sidebar/funktionen.md#gefahrgutzonen-einzeichnen) | G            |
 | ![](../assets/img/draw-distance-circle-tool.png) | Distanz Kreis  | I            |
 | ![](../assets/img/draw-polygon-tool.png)         | Polygon        | N            |
 | ![](../assets/img/draw-line-tool.png)            | Linie          | L            |
@@ -47,7 +47,7 @@ Bei **Linie**, **Distanz Linie**, **Polygon**, **Rechteck**, **Pfeil** kann man 
 | ![](../assets/img/draw-option-remove-last-vertex.png) | Schritt zurück   | Z            | Entfernt den zuletzt hinzugefügten Punkt einer Linie.                                             |
 | ![](../assets/img/draw-option-finish.png)             | Fertig           | ENTER        | Speichert das gezeichnete Objekt.                                                                 |
 | ![](../assets/img/draw-option-continure-drawing.png)  | Weiterzeichnen   | W            | Wenn aktiv kann weitergezeichnet werden, ansonsten wird der Zeichenmodus automatisch deaktiviert. |
-| ![](../assets/img/draw-option-group-select.png)       | Gruppe auswählen | Y            | Die neu gezeichneten Objekte können automatisch einer Gruppe hinzugefügt werden.                  |
+| ![](../assets/img/draw-option-group-select.png)       | Gruppe auswählen | Y            | Die neu gezeichneten Objekte können automatisch einer Gruppe hinzugefügt werden. [mehr](sidebar/layers.md#gruppen)                  |
 | ![](../assets/img/plus.png)                           | Gruppe erstellen |              | Neue Gruppe erstellen, bei welcher Objekte hinzugefügt werden können.                             |
 
 
@@ -95,7 +95,7 @@ Es gibt auch vordefinierte Funktion:
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | B-Schlauch                          | Erstellt eine Linie, welche alle 20 Meter ein Label bekommt. ![](../assets/img/b-schlauch.png) |
 | C-SChlauch                          | Erstellt eine Linie, welche alle 15 Meter ein Label bekommt. ![](../assets/img/c-schlauch.png) |
-| Pumpen-Berechnung \| Relais Leitung | Berechnet die Pumpenstandorte einer Relaisleitung. (Nur in AT möglich) [mehr - TODO](#)        |
+| Pumpen-Berechnung \| Relais Leitung | Berechnet die Pumpenstandorte einer Relaisleitung. (Nur in AT möglich) [mehr](sidebar/funktionen.md#pumpen-berechnung-relais-leitung-at)        |
 
 ## Symbole
 
@@ -104,7 +104,7 @@ Es gibt verschiedene Symbol-Sets. Einige sind genormt andere sind selbst erstell
 ![](../assets/img/symbole-container.png)
 
 
-In den [Einstellungen - TODO](#) oder über das *Zahnrad*-Symbol kann eingestellt werden, welche Symbol-Sets angezeigt werden sollen.
+In dem [*Einstellungen*-Tab](sidebar/../settings.md#projekt-einstellungen) "Symbol Verwaltung" oder über das *Zahnrad*-Symbol kann eingestellt werden, welche Symbol-Sets angezeigt werden sollen.
 
 ![](../assets/img/symbol-verwaltung-zeichnen-tab.png)
 

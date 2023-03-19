@@ -126,6 +126,8 @@ Wenn der Import über eine *GetCapabilities-URL* erfolgt, können die zu Importi
 
 ![](../assets/img/wms-getcapabilities.png)
 
+Die vorhandenen WMS-Layer werden in dem [*Layers*-Tab](sidebar/layers.md#wms-layer) engezeigt.
+
 ## Daten importieren
 
 Es können Objekte über eine URL, Datei oder Text importiert werden. 

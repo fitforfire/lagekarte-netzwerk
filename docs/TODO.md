@@ -1,10 +1,12 @@
-- [ ] Such-Control mit Dialog erklärung unter Funktion verknüpfen
-- [ ] Messen Zeichnen mit Funktionserklärung verknüpfen
-- [ ] Pumpenstandorte Zeichnen Tab mit Funktionserklärung
+- [x] Such-Control mit Dialog erklärung unter Funktion verknüpfen
+- [x] Messen Zeichnen mit Funktionserklärung verknüpfen
+- [x] Pumpenstandorte Zeichnen Tab mit Funktionserklärung
 - [ ] TALIS erklären
-- [ ] Contextmenü erklären
+- [x] Contextmenü erklären
 - [ ] Default Layers Testen und besser erklären
-- [ ] Gruppen Zeichnen mit layers.md verlinken
-- [ ] Link WMS-Layer Funktionen & Layers
+- [x] Gruppen Zeichnen mit layers.md verlinken
+- [x] Link WMS-Layer Funktionen & Layers
 - [ ] API Erklären?
-- [ ] Speichern - Projekte - Account-Info verlinken
+- [x] Speichern - Projekte - Account-Info verlinken
+- [ ] META Info
+- [ ] LOGO

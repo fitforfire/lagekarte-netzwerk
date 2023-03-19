@@ -121,6 +121,6 @@ Die aktuelle Karte kann in verschiedenen Format exportiert werden.
 
 ### Daten importieren
 
-Es kann nur das *Lagekarte*-Format für den Import verwendet werden. Für andere Datei-Formate muss die Funktionen [Daten importieren TODO]() verwendet werden.
+Es kann nur das *Lagekarte*-Format für den Import verwendet werden. Für andere Datei-Formate muss die Funktionen [Daten importieren](sidebar/../funktionen.md#daten-importieren) verwendet werden.
 
 ![](../assets/img/import-dialog.png)
