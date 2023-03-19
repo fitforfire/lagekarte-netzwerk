@@ -1,5 +1,7 @@
 # Dokumentation für Lagekarte.info
 
+[![](assets/img/lagekarte_lang.png ':size=400')](https://www.lagekarte.info)
+
 [Lagekarte.info](https://www.lagekarte.info) wurde als kostenloses Tool kozipiert, um während einem **Einsatz** eine Lageführung erstellen zu können. Es wird auch gerne als Übungsvorbereitung verwendet.
 
 ![](assets/img/lagekarte-cover.png)

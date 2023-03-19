@@ -1,3 +1,1 @@
-- [ ] API Erklären?
-- [ ] META Info
-- [ ] LOGO
+- [ ] Hilfe - URL-Parameter erklären?
