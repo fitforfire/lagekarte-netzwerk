@@ -14,7 +14,8 @@
     "url": "git+https://github.com/fitforfire/lagekarte-netzwerk.git"
   },
   "keywords": [
-    "lagekarte"
+    "lagekarte",
+    "docs"
   ],
   "author": "Falke-Design",
   "license": "ISC",
