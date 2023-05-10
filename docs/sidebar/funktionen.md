@@ -144,3 +144,9 @@ Folgende Formate sind möglich:
 Beim import über eine *URL*, kann auch angegeben werden, nach wie vielen Minuten das Objekt neu geladen werden soll. Kann z.B. zum Tracken eines Fahrzeuges verwendet werden.
 
 ![](../assets/img/daten-import-dialog.png)
+
+## Fluchtlinie
+
+Es kann eine Fluchtlinie erstellt werden, um an Hand von zwei Punkten einen Zielpunkt zu finden.
+
+![](../assets/img/funktion-fluchtlinie.gif)
