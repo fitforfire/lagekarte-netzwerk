@@ -40,15 +40,16 @@ Das Contextmenu kann mit einen `Rechts Klick` auf der Karte oder auf einem Objek
 
 ![](../assets/img/objektinfos-dialog.png)
 
-| Funktion      | Beschreibung                                                                                                                                                                                |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bezeichnung   | Name des Objekts.                                                                                                                                                                           |
-| Label         | Dem Objekt wird ein Label auf der Karte hinzugefügt. Es kann die Schriftgrößer und Farbe bearbeitet werden.                                                                                 |
-| Status        | **Nicht** für `Symbole` verfügbar: Es können verschiedene Status angelegt werden, welche zur Farblichen markierung verwendet werden können.                                                 |
-| Mannschaft    | Es kann eine Zahl oder Namentlich hinterlegt werden, welche Mannschaft dafür eingteilt ist. Kann über die [Mannschaftsliste](../sidebar/funktionen.md#mannschaftsliste) ausgewertet werden. |
-| Informationen | Ein Feld zum ablegen von unterschiedlichen informationen.                                                                                                                                   |
-| Daten         | Zeigt verschiedene Daten an. Position, Breite, Länge, Umfang, Fläche, ...                                                                                                                   |
-| Download      | Das Objekt kann als `GeoJSON`, `KML` oder `GPX` heruntergeladen werden.                                                                                                                     |
+| Funktion       | Beschreibung                                                                                                                                                                                |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bezeichnung    | Name des Objekts.                                                                                                                                                                           |
+| Label          | Dem Objekt wird ein Label auf der Karte hinzugefügt. Es kann die Schriftgrößer und Farbe bearbeitet werden.                                                                                 |
+| Status         | **Nicht** für `Symbole` verfügbar: Es können verschiedene Status angelegt werden, welche zur Farblichen markierung verwendet werden können.                                                 |
+| Mannschaft     | Es kann eine Zahl oder Namentlich hinterlegt werden, welche Mannschaft dafür eingteilt ist. Kann über die [Mannschaftsliste](/sidebar/funktionen.md#mannschaftsliste) ausgewertet werden. |
+| Informationen  | Ein Feld zum ablegen von unterschiedlichen informationen.                                                                                                                                   |
+| Popup-Bild URL | Bild-URL. Wird als Popup mit Klick auf den Layer angezeigt. Wird auch über den [Bildmarker](/sidebar/funktionen.md#bildmarker) gesetzt.                                                  |
+| Daten          | Zeigt verschiedene Daten an. Position, Breite, Länge, Umfang, Fläche, ...                                                                                                                   |
+| Download       | Das Objekt kann als `GeoJSON`, `KML` oder `GPX` heruntergeladen werden.                                                                                                                     |
 
 **Label:**
 
@@ -59,3 +60,7 @@ Das Contextmenu kann mit einen `Rechts Klick` auf der Karte oder auf einem Objek
 **Status**:
 
 ![](../assets/img/objektinfo-status.gif)
+
+**Popup-Bild URL**
+
+![](../assets/img/objektinfos-popup-url.png)

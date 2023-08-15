@@ -140,13 +140,85 @@ Folgende Formate sind möglich:
  - GeoJSON
  - KML
  - GPX
+ - [GeoTIFF](#geotiff)
+
+Während dem Import kann eine Füll-Farbe, Rahmen-Farbe und ein Standard-Symbole ausgewählt werden. Werden nach dem Laden der Daten Eigenschaften erkannt, können diese als Label und Bezeichnung zugewiesen werden, sowie unterschiedliche Symbole zugewiesen werden.
+
+![](../assets/img/daten-import-property-mapping.png)
 
 Beim import über eine *URL*, kann auch angegeben werden, nach wie vielen Minuten das Objekt neu geladen werden soll. Kann z.B. zum Tracken eines Fahrzeuges verwendet werden.
 
 ![](../assets/img/daten-import-dialog.png)
+
+### GeoTIFF
+
+GeoTIFF ist ein TIFF-Bild welches Georeferenzen für ein Koordinatensystem hinterlegt hat. Dadurch ist es möglich Bilder von z.B. einer Drohne als Overlay auf der Karte zu platzieren. 
+
+> Wenn möglich sollte das GeoTIFF Bild per URL importiert werden, damit es auch auf dem Projekt gespeichert werden kann.
+
+![](./../assets/img/geotiff-sample.png)
+
+Als Beispiel kann folgende URL in der Lagekarte eingetragen werden: `https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/20170831_172754_101c_3b_Visual.tif`
+
+!> Grundsätzlich gilt: Um so größer / detailreicher ein GeoTIFF um so länger dauert es und um so mehr Performance wird benötigt. Wenn das GeoTIFF nicht mehr benötigt wird, wird empfohlen es unter "Layers" zu deaktivieren. Ab einer Dateigröße von ca. 30MB sollte auf ein [Cloud Optimized GeoTIFF (COG)](https://www.cogeo.org/) gewechselt werden.
+
+
+#### Cloud Optimized GeoTIFF (COG) erstellen
+
+> Leider habe ich keinen Konverter gefunden, ohne dass Linux verwendet werden muss. Wenn jemand einen einfachen Konverter findet, gerne an design.falke [at] gmail.com melden.
+
+Kurzbeschreibung für Entwickler:
+
+1. [gdal](https://gdal.org/) installieren
+2. Konvertieren:
+```
+gdal_translate input_tiff.tif output_cog.tif -co TILED=YES -co COMPRESS=DEFLATE
+gdaladdo -r average output_cog.tif  2 4 8 16 32
+```
+3. Auf einem Server speichern
+
+
 
 ## Fluchtlinie
 
 Es kann eine Fluchtlinie erstellt werden, um an Hand von zwei Punkten einen Zielpunkt zu finden.
 
 ![](../assets/img/funktion-fluchtlinie.gif)
+
+## Bildmarker
+
+Nach dem das Bild über eine URL geladen wurde, werden aus den Metadaten des Bildes die Koordinaten ermittelt. 
+Die Koordinaten können über den Dialog geändert werden oder auch manuell auf der Karte ausgewählt werden.
+
+![](../assets/img/image-marker-place-dialog.png)
+
+![](../assets/img/image-marker-popup.png)
+
+Die Bild-URL kann in den [Objektinfos]('sidebar/../../contextmenu/contextmenu.md#objektinfos') geändert werden.
+
+Folgende Anbieter können als Quelle verwendet werden:
+- eigener Webserver
+- Google Drive
+- OneDrive (Embed)
+- Dropbox
+
+### Google Drive
+
+In Google Drive muss das Bild Freigegeben und der Zugriff für jeden mit dem Link aktiviert werden:
+
+![](../assets/img/image-marker-google-drive.png) 
+
+
+### OneDrive
+
+In OneDrive darf **nicht** *Link kopieren* verwendet werden! Es muss **Einbetten** verwendet werden!
+
+![](../assets/img/image-marker-onedrive-einbetten.png)
+
+![](../assets/img/image-marker-onedrive-url.png)
+
+### Dropbox
+
+In Dropbox muss das Bild geteilt / freigegeben werden und dee **Lesezugriff** allen erlaubt werden.
+
+![](../assets/img/image-marker-dropbox.png)

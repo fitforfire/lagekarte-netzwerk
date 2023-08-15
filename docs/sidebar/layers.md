@@ -38,4 +38,10 @@ Gruppen können Ein- und Ausgeblendet werden, umbenannt und gelöscht werden.
 
 ## WMS Layer
 
-WMS Layer können über das *Hinzufügen*-Symbol in der Leiste oder im Tab-*Funktionen* hinzugefügt werden.
+WMS Layer können über das *Hinzufügen*-Symbol in der Leiste oder im [Tab-*Funktionen*](sidebar/../funktionen.md#wms-layer) hinzugefügt werden.
+
+Die angezeigten WMS-Layer können *ausgeblendet* oder *entfernt* werden.
+
+## GeoTIFF Layer
+
+GeoTIFF Layer, welche über [Daten importieren](sidebar/../funktionen.md#daten-importieren) hinzugefügt wurden, erscheinen hier und können *ausgeblendet* oder *entfernt* werden.

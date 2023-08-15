@@ -9,7 +9,7 @@
   - [Meldungen](sidebar/meldungen.md)
   - [Speichern und Teilen](sidebar/save.md)
   - [Einstellungen](sidebar/settings.md)
-- [Contextmenu](contextmenu/README.md)
+- [Contextmenu](contextmenu/contextmenu.md)
 - [Drucken](drucken.md)
 - [🔐 Registrieren / Login](account.md)
 - [🔑 User Verwaltung](user-management.md)

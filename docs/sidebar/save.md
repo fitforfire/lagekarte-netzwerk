@@ -95,10 +95,12 @@ Um zu den Projekt-Einstellungen zu gelangen, muss auf den *Bearbeiten*-Button ge
 
 ![](../assets/img/projekt-settings-dialog.png)
 
-- Der Name des Projekts kann geändert werden
-- Eine Neugenerierung des *Share-Links*. **Achtung** dadurch werden alle bisher geteilten Links ungültig.
-- Projekt kopieren und neu abspeichern
-- Projekt löschen
+1. Der Name des Projekts kann geändert werden
+2. Eine Neugenerierung des *Share-Links*. **Achtung** dadurch werden alle bisher geteilten Links ungültig.
+3. Projekt in neuem Tab öffnen
+4. QR-Code anzeigen
+5. Projekt kopieren und neu abspeichern
+6. Projekt löschen
 
 
 ## Import / Export
