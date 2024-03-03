@@ -13,13 +13,14 @@ Karten:
 
 Overlays:
 
-| Name                        | Beschreibung                                                                                   |
-|-----------------------------|------------------------------------------------------------------------------------------------|
-| Zusätzliche Übersichtskarte | Blendet an der rechten Seite eine Satellitenkarte ein, welche sich gemeinsam mit Karte bewegt. |
-| Straßennamen (AT)           | Zeigt Straßennamen in Österreich an.                                                            |
-| Defibrillatoren (AT)        | Zeigt Defibrillatoren in Österreich an. Quelle: [Definetzwerk.at](https://definetzwerk.at/)    |
-| Sensordaten                 | Zeigt Sensordaten von der [OpenSenseMap](https://opensensemap.org/) an.                         |
-| Wasserpegel Stationen       | Zeigt Wasserpegel Stationen Weltweit an. Quelle: [PegelAlarm.at](https://pegelalarm.at/)       |
+| Name                        | Beschreibung                                                                                                                                                             |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Zusätzliche Übersichtskarte | Blendet an der rechten Seite eine Satellitenkarte ein, welche sich gemeinsam mit Karte bewegt.                                                                           |
+| Straßennamen (AT)           | Zeigt Straßennamen in Österreich an.                                                                                                                                     |
+| Defibrillatoren (AT)        | Zeigt Defibrillatoren in Österreich an. Quelle: [Definetzwerk.at](https://definetzwerk.at/)                                                                              |
+| Sensordaten                 | Zeigt Sensordaten von der [OpenSenseMap](https://opensensemap.org/) an.                                                                                                  |
+| Wasserpegel Stationen       | Zeigt Wasserpegel Stationen Weltweit an. Quelle: [PegelAlarm.at](https://pegelalarm.at/)                                                                                 |
+| OSM Hydranten               | Zeigt Hydranten basierend auf den Daten aus OpenStreetMap an. Es können selber Hydranten über das Tool [OSMHydrant.org](https://www.osmhydrant.org/) hinzugefügt werden. |
 
 ## Hinzufügen
 

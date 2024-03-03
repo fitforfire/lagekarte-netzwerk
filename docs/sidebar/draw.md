@@ -104,11 +104,10 @@ Es gibt verschiedene Symbol-Sets. Einige sind genormt andere sind selbst erstell
 ![](../assets/img/symbole-container.png)
 
 
-In dem [*Einstellungen*-Tab](sidebar/../settings.md#projekt-einstellungen) "Symbol Verwaltung" oder über das *Zahnrad*-Symbol kann eingestellt werden, welche Symbol-Sets angezeigt werden sollen.
+In dem [*Einstellungen*-Tab](sidebar/../settings.md#projekt-einstellungen) "Symbol Verwaltung" oder über das *Zahnrad*-Symbol kann eingestellt werden, welche Symbol-Sets angezeigt verfügbar sein sollen und in welcher Größe Symbole angezeigt werden.
 
 ![](../assets/img/symbol-verwaltung-zeichnen-tab.png)
 
-![](../assets/img/symbol-verwaltung-dialog.png)
 
 ## Vorlagen
 

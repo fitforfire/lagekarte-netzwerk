@@ -116,6 +116,10 @@ Zeigt die Mannschaft aller Objekte auf der Karte an.
 
 ![](../assets/img/mannschaftsliste-dialog.png)
 
+Wird die Detail-Checkbox deaktiviert, werden die Fahrzeuge und die Mannschaft zusammengezählt.
+
+![](../assets/img/mannschaftsliste-dialog-group.png)
+
 Kann auch ausgedruckt werden:
 
 ![](../assets/img/mannschaftsliste-print.png)

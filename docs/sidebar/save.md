@@ -83,7 +83,18 @@ Ein Projekt kann über einen Link mit anderen Personen geteilt werden. Beim klic
 
 Ein geteilter Link kann in den Einstellungen eines Projekts durch eine Neugenerierung ungültig gemacht werden.
 
-Wird ein geteiltes Projekt geladen, erscheint nach einer Speicherung des Quell-Projekts innerhalb von 2 Minuten eine Abfrage, ob die neusten Daten geladen werden sollen. 
+Standardmäßig wird ein geteiltes Projekt im Lese-Modus geladen. Dadurch werden keine Bearbeitungstools angezeigt. Die Bearbeitungstools können in den Projekt-Einstellungen aktiviert werden.
+
+Beim laden eines geteilten Projektes, erscheint beim öffnen eine Abfrage, wie mit neuen Versionen umgegangen werden soll.
+Es gibt drei Optionen:
+
+1. Neue Versionen nicht laden
+2. Automatisch die neue Version laden
+3. Bei einer neuen Version nachfragen
+
+![](../assets/img/shared-map-load-options.png)
+
+Wenn die Option "Nachfragen" ausgewählt wird und das Quell-Projekt gespeichert wird, erfolgt innerhalb von 2 Minuten eine Abfrage, ob die neusten Daten geladen werden sollen. 
 
 ![](../assets/img/shared-map-dialog.png)
 

@@ -33,3 +33,15 @@ Acuh kann hier das Passwort geändert werden und sich abgemeldet werden.
 | Auf Voreinstellungen zurücksetzen | Alle Meldungen und Farbfelder werden entferntFarbfelder.                                         |
 | Karte zurücksetzen                | Alle Objekte auf der Karte werden entfernt, sowie alle Zeitpunkte und die History zurückgesetzt. |
 | Projekt zurücksetzen              | Kombination von *Auf Voreinstellungen zurücksetzen* und *Karte zurücksetzen*.                    |
+
+### Symbol Verwaltung
+
+| Funktionen                    | Beschreibung                                                 |
+|-------------------------------|--------------------------------------------------------------|
+| Symbole dynamisch verkleinern | Verkleinert Symbole dynamisch ab der eingestellen Zoomstufe. |
+| Dynamischer Zoom Basis        | Ab welcher Zoomstufe die Symbole verkleinert werden.         |
+| Symbole vergrößern            | Vergrößert alle Symbole um die eingestellten Prozent.        |
+| Sichtbare Symbole             | Symbol-Sets welche im *Zeichnen*-Tab verfügbar sein sollen.  |
+
+![](../assets/img/symbol-verwaltung-dialog.png)
+
