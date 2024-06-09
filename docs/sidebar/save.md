@@ -110,8 +110,9 @@ Um zu den Projekt-Einstellungen zu gelangen, muss auf den *Bearbeiten*-Button ge
 2. Eine Neugenerierung des *Share-Links*. **Achtung** dadurch werden alle bisher geteilten Links ungültig.
 3. Projekt in neuem Tab öffnen
 4. QR-Code anzeigen
-5. Projekt kopieren und neu abspeichern
-6. Projekt löschen
+5. Bearbeitungstools anzeigen
+6. Projekt kopieren und neu abspeichern
+7. Projekt löschen
 
 
 ## Import / Export
